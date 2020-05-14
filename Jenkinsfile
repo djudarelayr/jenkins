@@ -7,6 +7,6 @@ node {
     ])
     checkout scm
     stage("Say Hi") {
-        echo "Whatever"
+        echo params.NAME
     }
 }
