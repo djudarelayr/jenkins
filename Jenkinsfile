@@ -3,6 +3,10 @@ pipeline {
 	options {
 		timeout(10)
 		ansiColor('xterm')
+	
+	}
+	environments {
+		FOO=bar
 	}
 	stages {
 		stage("hi") {
